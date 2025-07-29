@@ -60,7 +60,7 @@ public class AlgorithmResultDAOFile implements AlgorithmResultDAO {
                     int longitud = Integer.parseInt(partes[1]);
                     long tiempo = Long.parseLong(partes[2]);
                     LocalDateTime timestamp = LocalDateTime.parse(partes[3]);
-                    resultados.add(new AlgorithmResult(nombre, longitud, tiempo, timestamp));
+                    resultados.add(new AlgorithmResult(nombre, longitud, tiempo));
                 }
             }
         } catch (IOException | NumberFormatException e) {
