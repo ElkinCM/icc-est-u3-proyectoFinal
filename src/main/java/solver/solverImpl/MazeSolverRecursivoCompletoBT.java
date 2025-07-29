@@ -5,9 +5,6 @@ import models.*;
 
 import java.util.*;
 
-/**
- * Algoritmo recursivo completo con backtracking real: explora todas las rutas posibles.
- */
 public class MazeSolverRecursivoCompletoBT implements MazeSolver {
 
     private Set<Cell> visited;
