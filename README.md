@@ -101,10 +101,10 @@ Este diagrama refleja la separación de responsabilidades, modularidad y facilid
 A continuación, se presentan capturas de dos laberintos diferentes utilizando un algoritmo de resolución (por ejemplo, BFS):
 
 **Laberinto 1 – Camino encontrado:**  
-_(Insertar imagen de la interfaz mostrando el camino resaltado)_
+![img.png](img.png)
 
-**Laberinto 2 – Sin solución:**  
-_(Insertar imagen mostrando un laberinto sin ruta válida)_
+**Laberinto 2 – Sin solución:**
+![img_1.png](img_1.png)
 
 ---
 
