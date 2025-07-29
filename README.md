@@ -264,9 +264,7 @@ public class MazeController {
 
 - La implementación de múltiples algoritmos permite comparar estrategias de resolución de laberintos según su complejidad, eficiencia y resultados.
 - El algoritmo **BFS (Breadth-First Search)** garantiza encontrar el camino más corto, siendo ideal para rutas óptimas.
-- El algoritmo **DFS (Depth-First Search)** puede ofrecer tiempos más rápidos en laberintos donde la solución está cerca del punto de partida.
-- La estructura de datos basada en objetos `Cell` facilita la representación, estado y manipulación de cada celda dentro del laberinto.
-- La integración con **Swing** permite una visualización intuitiva de los procesos, y **JFreeChart** facilita el análisis visual de estadísticas y rendimientos.
+- Dentro de la realizacion del proyecto se noto  que el recorrido del laberinto no se mostraba correctamente porque el camino se construía de fin a inicio. Al no aplicar Collections.reverse(), el orden estaba invertido. Agregar esta instrucción permitió visualizar el recorrido correctamente desde la celda de inicio hasta la de fin.
 ---
 
 ## 4. 💡 Recomendaciones y Aplicaciones Futuras
