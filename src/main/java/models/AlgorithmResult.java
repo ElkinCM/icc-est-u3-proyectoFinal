@@ -8,33 +8,27 @@ public class AlgorithmResult implements Serializable {
 
     private final String algorithmName;
     private final int pathLength;
-    private final long executionTimeMillis;
+    private final long executionTimeNanos;
+
     private final LocalDateTime timestamp;
 
-    public AlgorithmResult(String algorithmName, int pathLength, long executionTimeMillis, LocalDateTime timestamp) {
+    public AlgorithmResult(String algorithmName, int pathLength, long executionTimeNanos) {
         this.algorithmName = algorithmName;
         this.pathLength = pathLength;
-        this.executionTimeMillis = executionTimeMillis;
-        this.timestamp = timestamp;
-    }
-
-    public AlgorithmResult(String algorithmName, int pathLength, long executionTimeMillis) {
-        this.algorithmName = algorithmName;
-        this.pathLength = pathLength;
-        this.executionTimeMillis = executionTimeMillis;
+        this.executionTimeNanos = executionTimeNanos;
         this.timestamp = LocalDateTime.now();
     }
 
     public String getAlgorithmName() {
         return algorithmName;
     }
+    public long getExecutionTimeNanos() {
+    return executionTimeNanos;
+}
+
 
     public int getPathLength() {
         return pathLength;
-    }
-
-    public long getExecutionTimeMillis() {
-        return executionTimeMillis;
     }
 
     public LocalDateTime getTimestamp() {
@@ -43,6 +37,6 @@ public class AlgorithmResult implements Serializable {
 
     @Override
     public String toString() {
-        return algorithmName + "," + pathLength + "," + executionTimeMillis + "," + timestamp;
+        return algorithmName + "," + pathLength + "," + executionTimeNanos + "," + timestamp;
     }
 }
